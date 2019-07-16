@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun Age_yes(view: View){
-        val IntentOrder = Intent(applicationContext, Login::class.java)
+        val IntentOrder = Intent(applicationContext, Hookah_menu::class.java)
         startActivity(IntentOrder)
         /*
         IntentOrder - локальная переменная, так что в данные две строки можно использовать
