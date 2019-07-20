@@ -7,6 +7,20 @@
         android:layout_height="match_parent"
         tools:context=".Hookah_menu">
 
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/acc_icon" android:id="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"/>
+    <TextView
+            android:text="@string/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView" android:textSize="24sp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView3" android:layout_marginEnd="113dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="173dp"
+            app:layout_constraintHorizontal_bias="0.833"/>
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
