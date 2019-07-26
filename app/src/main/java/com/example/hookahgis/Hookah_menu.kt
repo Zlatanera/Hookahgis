@@ -12,6 +12,10 @@ class Hookah_menu : AppCompatActivity() {
         setContentView(R.layout.activity_hookah_menu)
     }
 
+    fun Kalyany(view: View){
+        val kalyani = Intent(applicationContext, Kalyany::class.java)
+        startActivity(kalyani)
+
     fun where_to_smoke(view: View){
         val hookah_place = Intent(this, gde_kurim::class.java)
         startActivity(hookah_place)
