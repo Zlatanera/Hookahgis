@@ -9,11 +9,12 @@
 
     <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" app:srcCompat="@drawable/warning_scr" android:id="@+id/imageView4"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/warning_scr" android:id="@+id/main_warning"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="54dp" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="59dp" android:contentDescription="@string/Warning"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" android:layout_marginTop="15dp"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            android:contentDescription="@string/Warning"
+            app:layout_constraintTop_toBottomOf="@+id/main_logo" android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"/>
     <Button
             android:layout_width="258dp"
             android:layout_height="50dp"
@@ -22,8 +23,8 @@
             android:onClick="Age_yes"
             android:textColor="#FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="61dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="61dp"
+            android:layout_marginEnd="64dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="64dp"
             android:layout_marginBottom="15dp" app:layout_constraintBottom_toTopOf="@+id/age_no"/>
     <TextView
             android:layout_width="258dp"
@@ -35,17 +36,17 @@
             android:longClickable="false" android:freezesText="true" android:textAlignment="center"
             android:onClick="Age_no"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="62dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="64dp" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="64dp" android:background="@drawable/age_no_btn"
             android:layout_marginBottom="55dp" app:layout_constraintBottom_toBottomOf="parent"/>
     <ImageView
             android:layout_width="320dp"
             android:layout_height="320dp" app:srcCompat="@drawable/hookah_logo"
-            android:id="@+id/imageView"
+            android:id="@+id/main_logo"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="40dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="61dp" app:layout_constraintHorizontal_bias="0.7"
-            android:contentDescription="@string/Logo" android:layout_marginTop="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.7"
+            android:contentDescription="@string/Logo"
             app:layout_constraintTop_toTopOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
