@@ -40,28 +40,43 @@
                     android:layout_width="match_parent"
                     android:layout_height="122dp"
                     android:id="@+id/button"
-                    android:layout_marginTop="32dp" android:background="@drawable/craft_gypsy_nano"/>
+                    android:layout_marginTop="32dp" android:background="@drawable/hookah_aeon_avos_v2"/>
             <Button
-                    android:text="Button"
                     android:layout_width="match_parent"
                     android:layout_height="122dp"
-                    android:id="@+id/button2"/>
+                    android:id="@+id/button2" android:background="@drawable/hookah_aeon_ed_3"/>
             <Button
-                    android:text="Button"
                     android:layout_width="match_parent"
-                    android:layout_height="122dp" android:id="@+id/button3"/>
+                    android:layout_height="122dp" android:id="@+id/button3"
+                    android:background="@drawable/hookah_aeon_edition_4"/>
             <Button
-                    android:text="Button"
                     android:layout_width="match_parent"
-                    android:layout_height="122dp" android:id="@+id/button4"/>
+                    android:layout_height="122dp" android:id="@+id/button4"
+                    android:background="@drawable/hookah_aeon_lounge_mini"/>
             <Button
-                    android:text="Button"
                     android:layout_width="match_parent"
-                    android:layout_height="122dp" android:id="@+id/button5"/>
+                    android:layout_height="122dp" android:id="@+id/button5"
+                    android:background="@drawable/hookah_alpha_kappa"/>
             <Button
-                    android:text="Button"
                     android:layout_width="match_parent"
-                    android:layout_height="122dp" android:id="@+id/button6"/>
+                    android:layout_height="122dp" android:id="@+id/button6"
+                    android:background="@drawable/hookah_alpha_model_x"/>
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="122dp" android:id="@+id/button7"
+                    android:background="@drawable/hookah_alpha_sv"/>
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="122dp" android:id="@+id/button8"
+                    android:background="@drawable/hookah_craft_ginger_gypsy"/>
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="122dp" android:id="@+id/button9"
+                    android:background="@drawable/hookah_craft_gringo_mini"/>
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="122dp" android:id="@+id/button10"
+                    android:background="@drawable/hookah_craft_gypsy_nano"/>
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
