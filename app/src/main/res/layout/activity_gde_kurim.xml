@@ -10,8 +10,53 @@
 
 
     <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp" app:srcCompat="@drawable/back_button_white"
+            android:id="@+id/imageView"
+            android:onClick="back_to_menu"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" android:layout_marginTop="16dp"/>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            android:layout_marginTop="128dp" android:id="@+id/scrollView3">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                      android:orientation="vertical" android:gravity="center">
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/button"
+                    android:text="@string/Woody_woo"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/roboto_light"
+                    android:textAlignment="gravity"
+                    android:textAllCaps="false"
+                    android:textSize="32sp"
+                    android:background="@drawable/woody_woo" android:layout_marginBottom="2dp"/>
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/button2"
+                    android:text="@string/Dark_side"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/roboto_light"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="32sp"
+                    android:background="@drawable/dark_side" android:layout_marginBottom="2dp"/>
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/button3"
+                    android:text="@string/ParBar"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/roboto_light"
+                    android:background="@drawable/par_bar_hookah" android:textSize="32sp"
+                    android:textAlignment="center" android:textAllCaps="false" android:layout_marginBottom="2dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" app:srcCompat="@drawable/acc_icon_white" android:id="@+id/hookah_menu_acc"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/acc_icon_white"
+            android:id="@+id/hookah_menu_acc"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="16dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"/>
     <TextView
@@ -21,45 +66,18 @@
             android:id="@+id/textView" android:textSize="24sp"
             app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="16dp"
             android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent" android:textColor="#FFFFFF"/>
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent" android:textColor="#FFFFFF"
+            android:fontFamily="@font/roboto_light"/>
 
-    <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+    <TextView
+            android:text="Ваш город: N"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3" android:layout_marginBottom="32dp"
+            android:fontFamily="@font/roboto_light"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/scrollView3" android:layout_marginTop="32dp"
             app:layout_constraintTop_toBottomOf="@+id/textView"
-            android:layout_marginTop="48dp">
-        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-                      android:orientation="vertical" android:gravity="center">
-            <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" android:id="@+id/button"
-                    android:background="@drawable/woody_woo_1"/>
-            <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" android:id="@+id/button2"
-                    android:background="@drawable/dark_side"/>
-            <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" android:id="@+id/button3"
-                    android:text="Par Bar"
-                    android:textColor="#FFFFFF"
-                    android:background="@drawable/par_bar_hookah" android:textSize="48sp"
-                    android:textAlignment="textStart" android:textAllCaps="false"/>
-            <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" android:id="@+id/button4"
-                    android:text="Par Bar"
-                    android:textColor="#FFFFFF"
-                    android:background="@drawable/par_bar_hookah" android:textSize="48sp"
-                    android:textAlignment="textStart" android:textAllCaps="false"/>
-            <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" android:id="@+id/button5"
-                    android:background="@drawable/dark_side"/>
-            <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" android:id="@+id/button6"
-                    android:background="@drawable/woody_woo_1"/>
-        </LinearLayout>
-    </ScrollView>
+            app:layout_constraintEnd_toEndOf="@+id/textView" app:layout_constraintStart_toStartOf="@+id/textView"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
